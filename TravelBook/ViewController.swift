@@ -27,6 +27,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var annotationLatitude = Double()
     var annotationLongitude = Double()
     
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    
     //
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +50,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         view.addGestureRecognizer(hideKeyboardGestureRecognizer)
         
         if selectedTitle != ""{
+            
+            saveButton.isHidden = true
+            
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
@@ -95,7 +102,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             
         }
         else {
-            
+           
         }
         
     }

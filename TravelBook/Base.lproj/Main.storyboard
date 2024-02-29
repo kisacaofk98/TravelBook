@@ -62,6 +62,7 @@
                         <outlet property="commentText" destination="Bvn-Dz-ga4" id="mEh-iL-r0Y"/>
                         <outlet property="mapView" destination="67c-AK-Ec6" id="Pzn-B4-nG9"/>
                         <outlet property="nameText" destination="B14-K5-ne4" id="xvh-2R-OPA"/>
+                        <outlet property="saveButton" destination="VBS-K2-Q3q" id="xLk-hS-d2M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
